@@ -73,7 +73,7 @@ function renderInventory(filteredInventory = inventory) {
             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${item.name}</td>
             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${item.category}</td>
             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${item.quantity}</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$${item.price.toFixed(2)}</td>
+            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">₹${item.price.toFixed(2)}</td>  <!-- Changed from $ to ₹ -->
             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${item.category === 'Food' ? (item.expiry || 'N/A') : 'N/A'}</td>
             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                 <button class="text-primary hover:text-primary-600 mr-3 edit-btn" data-id="${item.id}">
